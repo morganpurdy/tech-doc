@@ -4,48 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <title>Technical documentation page</title>
-  
-  
+
+  <!--Stylesheets here-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/style.css">
 
-      <link rel="stylesheet" href="css/style.css">
 
-  
 </head>
 
 <body>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 <main id="main-doc">
   <div class ="nav-side-menu">
-    
-       <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+      <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
       <div class= "menu-list">
       <nav id = "navbar" class="nav">
         <header class="menuhed">Accessibility</header>
-      <ul id = "menu-content" class="menu-content collapse"> <!--this line with class made menu disappear-->
-        <li><a href = "#introduction" class= "nav-link">Introduction</a></li>
-       <li> <a href = "#what_is_accessibility?" class= "nav-link">What is accessibility?</a></li>
-       <li> <a href = "#what_kinds_of_disability_are_we_looking_at?"  class= "nav-link">What kinds of disability are we looking at?</a></li>
-       <li> <a href = "#Implementing_accessibility_into_your_project" class= "nav-link">Implementing accessibility into your project
-    </a></li>
-    <li><a href="#Accessibility_guidelines_and_the_law"  class= "nav-link ">Accessibility guidelines and the law
-      </a></li>
-  <li>  <a href ="#HTML_and_accessibility"  class= "nav-link ">HTML and accessibility</a></li>
-  <li>  <a href = "#Good_semantics"  class= "nav-link collapse">Good semantics</a></li>
-  <li>  <a href ="#CSS,_Javascript_accessibility"  class= "nav-link ">CSS, Javascript accessibility</a></li>
-   <li> <a href="#WAI-ARIA_basics" class= "nav-link">WAI-ARIA basics</a></li>
-   <li> <a href="#Accessible_multimedia"  class= "nav-link ">Accessible multimedia</a></li>
-      <li>  <a href="#mobile_accessibility" class= "nav-link ">Mobile accessibility</a></li>
-    </ul>
-    </div><!--end menu-list div -->
-  </nav>
-  </div>
+        <ul id = "menu-content" class="menu-content collapse out"> <!--this line with class made menu disappear-->
+          <li class ="top-menu"><a href = "#introduction" class= "nav-link">Introduction</a></li>
+          <li class ="top-menu"><a href = "#what_is_accessibility?" class= "nav-link">What is accessibility?</a></li>
+          <li class ="top-menu"><a href = "#what_kinds_of_disability_are_we_looking_at?"  class= "nav-link">What kinds of disability are we looking at?</a></li>
+          <li class ="top-menu"><a href = "#Implementing_accessibility_into_your_project" class= "nav-link">Implementing accessibility into your project</a></li>
+          <li class ="top-menu"><a href="#Accessibility_guidelines_and_the_law"  class= "nav-link ">Accessibility guidelines and the law</a></li>
+          <li class ="top-menu"><a href ="#HTML_and_accessibility"  class= "nav-link ">HTML and accessibility</a></li>
+          <li class ="top-menu"><a href = "#Good_semantics"  class= "nav-link">Good semantics</a></li>
+          <li class ="top-menu"><a href ="#CSS,_Javascript_accessibility"  class= "nav-link ">CSS, Javascript accessibility</a></li>
+           <li class ="top-menu"><a href="#WAI-ARIA_basics" class= "nav-link">WAI-ARIA basics</a></li>
+           <li class ="top-menu"><a href="#Accessible_multimedia"  class= "nav-link ">Accessible multimedia</a></li>
+           <li class ="top-menu"><a href="#mobile_accessibility" class= "nav-link ">Mobile accessibility</a></li>
+         </ul>
+        </nav>
+       </div><!--end menu-list div -->
+     </div> <!--end nav-side-menu div-->
   <section class="main-section" id="introduction">
     <header>Introduction</header>
-    <p>This information on accessibility comes from the <a href= "https://developer.mozilla.org/en-US/docs/Learn/Accessibility">Mozilla Developer Network module on accessibility.</a> It is reproduced here for a project for FreeCodeCamp in which I create a technical documentation page. All sourcing and credit goes to MDN.</p>
+    <p><b>This information on accessibility comes from the <a href= "https://developer.mozilla.org/en-US/docs/Learn/Accessibility">Mozilla Developer Network module on accessibility.</a> It is reproduced here for a project for FreeCodeCamp in which I create a technical documentation page. All sourcing and credit goes to MDN.</b></p>
     <p>Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer, but your knowledge needs to go further than just the technologies. As a developer you need to use the technoligies in the right way so you maximize the audience for you sites and don't unintentionally lock someone out. To achieve this, you need to adhere to general best practices, do cross browser testing, and consider accessibility from the start. </p>
   </section>
     <section class="main-section" id="what_is_accessibility?">
@@ -57,372 +51,320 @@
       <p>Accessibility and the best practices it entails can benefit everyone:</p>
       <ul>
         <li>Semantic HTML (which improves accessibility) also improves SEO, making your site more findable/marketable.</li>
-                <li>Caring about accessibility demonstrates good ethics/morals, which improves your public image.</li>
+        <li>Caring about accessibility demonstrates good ethics/morals, which improves your public image.</li>
         <li>Other good practices that improve accessibility also make your site more usable by other groups, such as mobile phone users, those on a low network speed, etc. In fact, everyone can benefit from many such improvements.</li>
         <li>It is the law in some places!</li>
       </ul>
       <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
   </section>
+
   <section class="main-section" id="what_kinds_of_disability_are_we_looking_at?">
     <header>What kinds of disability are we looking at?</header>
     <p>People with disabilities are just as diverse as people without disabilities, and so are their disabilities. The key lesson here is to think beyond your own computer and how you use the web, and start learning about how others use it — you are not your users. The main types of disability to consider are explained below, along with any specialist tools they use to access web content (known as assistive technologies, or ATs).</p>
-    <p class="note">Note: The World Health Organization's Disability and health fact sheet states that "Over a billion people, about 15% of the world's population, have some form of disability", and "Between 110 million and 190 million adults have significant difficulties in functioning."</p>
+
     <p><b>People with visual impairments</b></p>
     <p>This includes people with blindness, low-level vision, color blindness, etc. Many of these people will use screen magnifiers (either physical magnifiers, or software zoom capabilities — most browsers and operating systems these days have zoom capabilities), and some will use screen readers, which is software that reads digital text aloud.</p>
-    
-       <p><b>People with hearing impairments</b></p>
-    <p>
-      Otherwise known as people with auditory impairments, or deaf people, this group of people have either low hearing levels or no hearing at all. Hearing-impaired people do use ATs, but there are not really special ATs specific for computer/web use.</p>
 
-<p>There are, however, specific techniques to bear in mind for providing text alternatives to audio content that they can read, from simple text transcripts, to text tracks (i.e. captions) that can be displayed along with video. An article later on will discuss these.</p>
+    <p><b>People with hearing impairments</b></p>
+    <p>Otherwise known as people with auditory impairments, or deaf people, this group of people have either low hearing levels or no hearing at all. Hearing-impaired people do use ATs, but there are not really special ATs specific for computer/web use.</p>
 
-
-<p><b>People with mobility impairments</b></p>
+    <p><b>People with mobility impairments</b></p>
     <p>These people have disabilities concerning movement, which might involve purely physical issues (such as loss of limb or paralysis), or neurological/genetic disorders that lead to weakness or loss of control in limbs. Some people might have difficulty making the exact hand movements required to use a mouse, while others might be more severely affected, perhaps being significantly paralysed to the point where they need to use a head pointer to interact with computers.</p>
     <p>The way this usually affects web development work is the requirement that controls be accessible by the keyboard, but it is a good idea to try out some websites using just the keyboard to see how you get on. Can you use the tab key to move between the different controls of a web form, for example? </p>
+
     <p><b>People with cognitive impairments</b></p>
     <p>Probably the widest range of disabilities can be seen in this last category — cognitive impairment can broadly refer to disabilities from mental illnesses to learning difficulties, difficulties in comprehension and concentration like ADHD (attention deficit hyperactivity disorder), to people on the autistic spectrum, to people with schizophrenia, and many other types of disorder besides. Such disabilities can affect many parts of everyday life, due to problems with memory, problem solving, comprehension, attention, etc.</p>
     <p>The most common ways that such disabilities might affect website usage is difficulty in understanding how to complete a task, remembering how to do something that was previously accomplished, or increased frustration at confusing workflows or inconsistent layouts/navigation/other page features.</p>
-    <p>Unlike other web accessibility issues, it is impossible to prescribe quick fixes to many web accessibility issues arising from cognitive disabilities; the best chance you've got is to design your websites to be as logical, consistent, and usable as possible, so for example making sure that:</p>
-    <ul>
-      <li>pages are consistent — navigation, header, footer, and main content are always in the same places.</li>
-      <li>tools are well-designed and easy to use.
-</li>
-      <li>multi-stage processes are broken down into logical steps, with regular reminders of how far through the process you are, and how long you've got left to complete the process, if appropriate.
-</li>
-      <li>workflows are logical, simple, and require as few interactions as possible to complete. For example, registering and signing in to a website is often unneccessarily complex.
-</li>
-      <li>pages are not overly long or dense in terms of the amount of information presented at once.
-</li>
-      <li>the language used in your pages is as plain and easy to follow as possible, and not full of unneccessary jargon and slang.
-</li>
-      <li>important points and content are highlighted in some way.
-</li>
-      <li>user errors are clearly highlighted, with help messages to suggest solutions.
-</li>
-    </ul>  
+    <p>Unlike other web accessibility issues, it is impossible to prescribe quick fixes to many web accessibility issues arising from cognitive disabilities; the best chance you've got is to design your websites to be as logical, consistent, and usable as possible.</p>
     <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
   </section>
+
   <section class="main-section" id="Implementing_accessibility_into_your_project">
     <header>Implementing accessibility into your project</header>
     <p>A common accessibility myth is that accessibility is an expensive "added extra" to implement on a project. This myth actually can be true if either: (A) You are trying to "retrofit" accessibility onto an existing website that has significant accessiblity issues. Or, (B) You have only started to consider accessibility and uncovered related issues in the late stages of a project.</p>
     <p>If, however, you consider accessibility from the start of a project, the cost of making most content accessible should be fairly minimal.</p>
     <p>When planning your project, factor accessibility testing into your testing regime, just like testing for any other important target audience segment (e.g. target desktop or mobile browsers). Test early and often, ideally running automated tests to pick up on programmatically detectable missing features (such as missing image alternative text or bad link text — see Element relationships and context), and doing some testing with disabled user groups to see how well more complex site features work for them.</p>
-   
-    <p>To show that you care and have thought about accessibility, publish an accessibility statement on your site that details what your policy is toward accessibility, and what steps you have taken toward making the site accessible. If someone does complain that your site has an accessibility problem, start a dialog with them, be empathic, and take reasonable steps to try to fix the problem.</p>
     <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
   </section>
+
   <section class="main-section" id="Accessibility_guidelines_and_the_law">
     <header>Accessibility guidelines and the law</header>
     <p>There are numerous checklists and sets of guidelines available for basing accessibility tests on, which might seem overwhelming at first glance. Our advice is to familiarize yourself with the basic areas in which you need to take care, as well as understanding the high level structures of the guidelines that are most relevant to you.</p>
     <p>For a start, the W3C has published a large and very detailed document that includes very precise, technology-agnostic criteria for accessibility conformance. These are called the Web Content Accessibility Guidelines (WCAG), and they are not a short read by any means. The criteria are split up into four main categories, which specify how implementations can be made perceivable, operable, understandable, and robust. The best place to get a light introduction and start learning is WCAG at a Glance. There is no need to learn WCAG off by heart — be aware of the major areas of concern, and use a variety of techniques and tools to highlight any areas that don't conform to the WCAG criteria.</p>
     <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
   </section>
-  <section class="main-section" id="HTML_and_accessibility">
-    <header>HTML and accessibility
-</header>
-    <p>As you learn more about HTML — read more resources, look at more examples, etc. — you'll keep seeing a common theme: the importance of using semantic HTML (sometimes called POSH, or Plain Old Semantic HTML). This means using the correct HTML elements for their correct purpose as much as possible.
 
-    </p>
+  <section class="main-section" id="HTML_and_accessibility">
+    <header>HTML and accessibility</header>
+    <p>As you learn more about HTML — read more resources, look at more examples, etc. — you'll keep seeing a common theme: the importance of using semantic HTML (sometimes called POSH, or Plain Old Semantic HTML). This means using the correct HTML elements for their correct purpose as much as possible.</p>
     <p>You might wonder why this is so important. After all, you can use a combination of CSS and JavaScript to make just about any HTML element behave in whatever way you want. For example, a control button to play a video on your site could be marked up like this:</p>
-<pre>
-  <code>
-    &#60;div&#62;Play video&#60;/div&#62;
-  </code>
-</pre>
-    <p>But as you'll see in greater detail later on, it makes much sense to use the correct element for the job:</p>
-<pre>
-  <code>
-    &#60;button&#62;Play video&#60;/button&#62;
-  </code>
-</pre>
-<p>Not only do HTML &#60;button&#62;s have some suitable styling applied by default (which you will probably want to override), they also have built-in keyboard accessibility — they can be tabbed between, and activated using Return/Enter.</p>
-<p>Semantic HTML doesn't take longer to write than non-semantic (bad) markup if you do it consistently from the start of your project, and it also has other benefits beyond accessibility-- it's easier to develop with, better on mobile and good for SEO.</p>
+      <pre>
+        <code>
+          &#60;div&#62;Play video&#60;/div&#62;
+        </code>
+      </pre>
+          <p>But as you'll see in greater detail later on, it makes much sense to use the correct element for the job:</p>
+      <pre>
+        <code>
+          &#60;button&#62;Play video&#60;/button&#62;
+        </code>
+      </pre>
+    <p>Not only do HTML &#60;button&#62;s have some suitable styling applied by default (which you will probably want to override), they also have built-in keyboard accessibility — they can be tabbed between, and activated using Return/Enter.</p>
+    <p>Semantic HTML doesn't take longer to write than non-semantic (bad) markup if you do it consistently from the start of your project, and it also has other benefits beyond accessibility-- it's easier to develop with, better on mobile and good for SEO.</p>
     <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
-  </section>
+    </section>
+
     <section class="main-section" id="Good_semantics">
     <header>Good semantics</header>
-    <p>We've already talked about the importance of good semantics, and why we should use the right HTML element for the right job. This cannot be ignored, as it is one of the main places that accessibility is badly broken if not handled properly.</p>
+      <p>We've already talked about the importance of good semantics, and why we should use the right HTML element for the right job. This cannot be ignored, as it is one of the main places that accessibility is badly broken if not handled properly.</p>
+      <p>Out there on the web, the truth is that people do some very strange things with HTML markup. Some abuses of HTML are due to legacy practices that have not been completely forgotten, and some are just plain ignorance. Whatever the case, you should replace such bad code wherever you see it, whenever you can.</p>
+      <p>Sometimes you are not always in the position to get rid of bad markup — your pages might be generated by some kind of server-side framework that you don't have full control over, or you might have third party content on your page (such as ad banners) that you don't have control over.</p>
+      <p>The goal isn't "all or nothing", however — every improvement you are able to make will help the cause of accessibility.</p>
 
-<p>Out there on the web, the truth is that people do some very strange things with HTML markup. Some abuses of HTML are due to legacy practices that have not been completely forgotten, and some are just plain ignorance. Whatever the case, you should replace such bad code wherever you see it, whenever you can.</p>
-
-<p>Sometimes you are not always in the position to get rid of bad markup — your pages might be generated by some kind of server-side framework that you don't have full control over, or you might have third party content on your page (such as ad banners) that you don't have control over.</p>
-
-    <p>The goal isn't "all or nothing", however — every improvement you are able to make will help the cause of accessibility.</p>
       <p><b>Text context</b></p>
-<p>One of the best accessibility aids a screenreader user can have is a good content structure of headings, paragraphs, lists, etc. A good semantic example might look something like the following:</p>
-<pre>
-  <code>
-    &#60;h1&#62;My heading&#60;/h1&#62;
-    
-      &#60;p&#62;The first section of my document&#60;/p&#62;
+      <p>One of the best accessibility aids a screenreader user can have is a good content structure of headings, paragraphs, lists, etc. A good semantic example might look something like the following:</p>
+      <pre>
+        <code>
+          &#60;h1&#62;My heading&#60;/h1&#62;
 
-        &#60;ol&#62;
-          &#60;li&#62;Here is&#60;/li&#62;
-          &#60;li&#62;a list for&#60;/li&#62;
-          &#60;li&#62;you to read&#60;/li&#62;
-        &#60;/ol&#62;
-      
-    &#60;h2&#62;A subheading&#60;/h2&#62;
-    
-      &#60;p&#62;This is the first subsection of my document.&#60;/p&#62;
-  </code>
-</pre>
+            &#60;p&#62;The first section of my document&#60;/p&#62;
+
+              &#60;ol&#62;
+                &#60;li&#62;Here is&#60;/li&#62;
+                &#60;li&#62;a list for&#60;/li&#62;
+                &#60;li&#62;you to read&#60;/li&#62;
+              &#60;/ol&#62;
+
+          &#60;h2&#62;A subheading&#60;/h2&#62;
+
+            &#60;p&#62;This is the first subsection of my document.&#60;/p&#62;
+        </code>
+      </pre>
 
       <p><b>Using clear language</b></p>
       <p>The language you use can also affect accessibility. In general you should use clear language that is not overly complex, and doesn't use unnecessary jargon or slang terms. This not only benefits people with cognitive or other disabilities; it benefits readers for whom the text is not written in their first language, younger people ... everyone in fact! Apart from this, you should try to avoid using language and characters that don't get read out clearly by the screenreader. </p>
-      
+
       <p><b>Page layout</b></p>
       <p>In the bad old days, people used to create page layouts using HTML tables — using different table cells to contain the header, footer, side bar, main content column, etc. This is not a good idea because a screenreader will likely give out confusing readouts, especially if the layout is complex and has many nested tables.</p>
-
-      <P>Table layouts are a relic of the past — they made sense back when CSS support was not widespread in browsers, but they create confusion for screenreader users, as well as being bad for many other reasons (abuse of tables, arguably requires more markup, make designs more inflexible). Don't do it!</p>
-<p>If you try our more modern structure example with a screenreader, you'll see that the layout markup no longer gets in the way and confuses the content readout. It is also much leaner and smaller in terms of code size, which means easier to maintain code, and less bandwidth for the user to download (particularly prevalent for those on slow connections).</p>
+      <p>If you try our more modern structure example with a screenreader, you'll see that the layout markup no longer gets in the way and confuses the content readout. It is also much leaner and smaller in terms of code size, which means easier to maintain code, and less bandwidth for the user to download (particularly prevalent for those on slow connections).</p>
 
       <p><b>UI controls</b></p>
       <p>By UI controls, we mean the main parts of web documents that users interact with — most commonly buttons, links, and form controls. In this section we'll look at the basic accessibility concerns to be aware of when creating such controls. Later articles on WAI-ARIA and multimedia will look at other aspects of UI accessibility. One key aspect to the accessibility of UI controls is that by default, browsers allow them to be manipulated by the keyboard. </p>
 
-<pre>
-  <code>
-    &#60;h1&#62;Links&#60;/h1&#62;
-    
-      &#60;p&#62;This is a link to  &#60;a href="https://www.mozilla.org"&#62;Mozilla&#60;/a&#62;.&#60;/p&#62;
-      
-    &#60;h2&#62;Buttons&#60;/h2&#62;
-    
-      &#60;p&#62;  
-      &#60;button data-message="This is from the first button"&#62;Click me!&#60;/button&#62;
-      &#60;button data-message="This is from the second button"&#62;Click me!&#60;/button&#62;
-      &#60;button data-message="This is from the third button"&#62;Click me!&#60;/button&#62;
-      &#60;/p&#62;
-      
-    &#60;h2&#62;Forms&#60;/h2&#62;
-      
-     &#60;form&#62;
-        &#60;div&#62;
-          &#60;label for="mood"&#62;Choose your mood:&#60;/label&#62;
-          &#60;select id="mood" name="mood"&#62;
-            &#60;option&#62;Happy&#60;/option&#62;
-            &#60;option&#62;Sad&#60;/option&#62;
-            &#60;option&#62;Angry&#60;/option&#62;
-            &#60;option&#62;Worried&#60;/option&#62;
-          &#60;/select&#62;
-         &#60;/div&#62;
-     &#60;/form&#62;   
-  </code>
-</pre>
-  <p>This means using links, buttons, form elements, and labels appropriately (including the &#60;label&#62; element for form controls).</p>   
-      <p>However, it is again the case that people sometimes do strange things with HTML. For example, you sometimes see buttons marked up using &#60;div&#62;s, for example:</p>
       <pre>
-  <code> 
-      &#60;div data-message="This is from the first button"&#62;Click me!&#60;/div&#62;
-      &#60;div data-message="This is from the second button"&#62;Click me!&#60;/div&#62;
-      &#60;div data-message="This is from the third button"&#62;Click me!&#60;/div&#62;
-  </code>
-</pre>
+        <code>
+          &#60;h1&#62;Links&#60;/h1&#62;
+
+            &#60;p&#62;This is a link to  &#60;a href="https://www.mozilla.org"&#62;Mozilla&#60;/a&#62;.&#60;/p&#62;
+
+          &#60;h2&#62;Buttons&#60;/h2&#62;
+
+            &#60;p&#62;
+            &#60;button data-message="This is from the first button"&#62;Click me!&#60;/button&#62;
+            &#60;button data-message="This is from the second button"&#62;Click me!&#60;/button&#62;
+            &#60;button data-message="This is from the third button"&#62;Click me!&#60;/button&#62;
+            &#60;/p&#62;
+
+          &#60;h2&#62;Forms&#60;/h2&#62;
+
+           &#60;form&#62;
+              &#60;div&#62;
+                &#60;label for="mood"&#62;Choose your mood:&#60;/label&#62;
+                &#60;select id="mood" name="mood"&#62;
+                  &#60;option&#62;Happy&#60;/option&#62;
+                  &#60;option&#62;Sad&#60;/option&#62;
+                  &#60;option&#62;Angry&#60;/option&#62;
+                  &#60;option&#62;Worried&#60;/option&#62;
+                &#60;/select&#62;
+               &#60;/div&#62;
+           &#60;/form&#62;
+        </code>
+      </pre>
+        <p>This means using links, buttons, form elements, and labels appropriately (including the &#60;label&#62; element for form controls).</p>
+            <p>However, it is again the case that people sometimes do strange things with HTML. For example, you sometimes see buttons marked up using &#60;div&#62;s, for example:</p>
+            <pre>
+        <code>
+            &#60;div data-message="This is from the first button"&#62;Click me!&#60;/div&#62;
+            &#60;div data-message="This is from the second button"&#62;Click me!&#60;/div&#62;
+            &#60;div data-message="This is from the third button"&#62;Click me!&#60;/div&#62;
+        </code>
+      </pre>
       <p>But using such code is not advised — you immediately lose the native keyboard accessibility you would have had if you'd just used &#60;button&#62; elements, plus you don't get any of the default CSS styling that buttons get.</p>
       <p>However, you can build keyboard accessiblity back into your page by giving each div a tabindex of 0.</p>
-      <p>Basically, the tabindex attribute is primarily intended to allow tabbable elements to have a custom tab order (specified in positive numerical order), instead of just being tabbed through in their default source order. This is nearly always a bad idea, as it can cause major confusion. Use it only if you really need to, for example if the layout shows things in a very different visual order to the source code, and you want to make things work more logically. There are two other options for tabindex: </p>
-      <ul>
-        <li>tabindex="0" — as indicated above, this value allows elements that are not normally tabbable to become tabbable. This is the most useful value of tabindex.</li>
-        
-<li>tabindex="-1" — this allows not normally tabbable elements to receive focus programmatically, e.g. via JavaScript, or as the target of links. </li>
-      </ul>
+      <p>Basically, the tabindex attribute is primarily intended to allow tabbable elements to have a custom tab order (specified in positive numerical order), instead of just being tabbed through in their default source order. This is nearly always a bad idea, as it can cause major confusion. Use it only if you really need to, for example if the layout shows things in a very different visual order to the source code, and you want to make things work more logically.</p>
       <p>You must use Javascript in addition to this if  you want these items to be able to be activated by the "enter/return" key.</p>
-      <p>Also be sure to include meaningful text labels. Be certain they make sense when they standalone as well as within the context of a paragraph.</p>
       <p>This is just an introduction into the importance of accessibility in HTML. Below are some more important topics. </p>
       <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#Accessible_data_tables">Find out more about accessible data tables.</a></p>
-       <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#Text_alternatives">Find out more about text alternatives.</a></p>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#Text_alternatives">Find out more about text alternatives.</a></p>
       <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility#So_what_is_accessibility#Accessibility_APIs">Find out more about accessibility APIs.</a></p>
       <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
   </section>
-  
+
     <section class="main-section" id="CSS,_Javascript_accessibility">
     <header>CSS, Javascript accessibility</header>
       <p>CSS and JavaScript don't have the same immediate importance for accessibility as HTML, but they are still able to help or damage accessibility, depending on how they are used. To put it another way, it is important that you consider some best practice advice to make sure that your use of CSS and JavaScript doesn't ruin the accessibility of your documents.</p>
-  
-      <p><b>CSS</b></p>
+
+      <h1>CSS</h1>
       <p>Let's start off by looking at CSS.</p>
       <p><b>Correct semantics and user expectation</b></p>
-      <p>It is possible to use CSS to make any HTML element look like anything, but this doesn't mean that you should. As we frequently mentioned in our HTML: A good basis for accessibility article, you should use the appropriate semantic element for the job, whenever possible. If you don't, it can cause confusion and usability issues for everyone, but particularly users with disabilities. Using correct semantics has a lot to do with user expectations — elements look and behave in certain ways, according to their functionality, and these common conventions are expected by users.
+      <p>It is possible to use CSS to make any HTML element look like anything, but this doesn't mean that you should. As we frequently mentioned in our HTML: A good basis for accessibility article, you should use the appropriate semantic element for the job, whenever possible. If you don't, it can cause confusion and usability issues for everyone, but particularly users with disabilities. Using correct semantics has a lot to do with user expectations — elements look and behave in certain ways, according to their functionality, and these common conventions are expected by users.</p>
 
-</p>
-      <p>The rule of thumb is that you can update the styling of a page feature to fit in your design, but don't change it so much that it no longer looks or behave as expected. The following sections summarize the main HTML features to consider.  </p>
       <p><b>Standard text content structure</b></p>
       <p>Headings, paragraphs, lists — the core text content of your page:</p>
-      
-<pre>
-  <code>
-    &#60;h1&#62;My heading&#60;/h1&#62;
-    
-      &#60;p&#62;The first section of my document&#60;/p&#62;
 
-        &#60;ul&#62;
-          &#60;li&#62;Here is&#60;/li&#62;
-          &#60;li&#62;a list for&#60;/li&#62;
-          &#60;li&#62;you to read&#60;/li&#62;
-        &#60;/ul&#62;
-  </code>
-</pre>
-<p>Some typical CSS might look like this:</p>
+      <pre>
+        <code>
+          &#60;h1&#62;My heading&#60;/h1&#62;
 
-<pre>
-  <code>
-    h1 {
-      font-size: 5rem;
-    }
+            &#60;p&#62;The first section of my document&#60;/p&#62;
 
-    p, li {
-      line-height: 1.5;
-      font-size: 1.6rem;
-    }
-  </code>
-</pre>
+              &#60;ul&#62;
+                &#60;li&#62;Here is&#60;/li&#62;
+                &#60;li&#62;a list for&#60;/li&#62;
+                &#60;li&#62;you to read&#60;/li&#62;
+              &#60;/ul&#62;
+        </code>
+      </pre>
+      <p>Some typical CSS might look like this:</p>
+
+      <pre>
+        <code>
+          h1 {
+            font-size: 5rem;
+          }
+
+          p, li {
+            line-height: 1.5;
+            font-size: 1.6rem;
+          }
+        </code>
+      </pre>
       <p>You should:</p>
-<ul>
-<li>Select sensible font sizes, line heights, letter spacing, etc. to make your text logical, legible, and comfortable to read.</li>
-<li>Make sure your headings stand out from your body text, typically big and bold like the default styling. Your lists should look like lists.</li>
-  <li>Your text color should contrast well with your background color.</li>
-      </ul>
+        <ul>
+          <li>Select sensible font sizes, line heights, letter spacing, etc. to make your text logical, legible, and comfortable to read.</li>
+          <li>Make sure your headings stand out from your body text, typically big and bold like the default styling. Your lists should look like lists.</li>
+          <li>Your text color should contrast well with your background color.</li>
+        </ul>
+
       <p><b>Emphasized text</b></p>
       You will however rarely need to style emphasis elements in any significant way. The standard conventions of bold and italic text are very recognisable, and changing the style can cause confusion.</p>
-  
-  <p><b>Color and color contrast</b></p>
-  <p>When choosing a color scheme for your website, make sure that the text (foreground) color contrasts well with the background color. Your design might look cool, but it is no good if people with visual impairments like color blindness can't read your content.</p>
-  <p>Another tip is to not rely on color alone for signposts/information, as this will be no good for those who can't see the color. Instead of marking required form fields in red, for example, mark them with an asterisk and in red.</p>
-  <p><b>Accept that users can override styles</b></p>
-  <p>It is possible for users to override your styles with their own custom styles.</p>
-  <p>Users might do this for a variety of reasons. A visually impaired user might want to make the text bigger on all websites they visit, or a user with severe color deficiency might want to put all websites in high contrast colors that are easy for them to see. Whatever the need, you should be comfortable with this, and make your designs flexible enough so that such changes will work in your design. As an example, you might want to make sure your main content area can handle bigger text (maybe it will start to scroll to allow it all to be seen), and won't just hide it, or break completely.
-</p>
-  
-  <p><b>Javascript</b></p>
-  <p>JavaScript can also break accessibility, depending on how it is used. Modern JavaScript is a powerful language, and we can do so much with it these days, from simple content and UI updates to fully-fledged 2D and 3D games. There is no rule that says all content has to be 100% accessible to all people — you just need to do what you can, and make your apps as accessible as possible.</p>
-  <p>We also looked at an example of how to use JavaScript to build in functionality where it is missing — see Building keyboard accessibility back in. This is not ideal — really you should just use the right element for the right job — but it shows that it is possible in situations where for some reason you can't control the markup that is used. Another way to improve accessibility for non-semantic JavaScript-powered widgets is to use WAI-ARIA to provide extra semantics for screen reader users.</p>
-  <p>The problem with too much JavaScript</p>
-  <p>The problem often comes when people rely on JavaScript too much. Sometimes you'll see a website where everything has been done with JavaScript — the HTML has been generated by JavaScript, the CSS has been generated by JavaScript, etc. This has all kinds of accessibility and other issues associated with it, so it is not advised.</p>
-  <p><b>Keeping it unobtrusive</b></p>
-  <p>You should keep unobtrusive JavaScript in mind when creating your content. The idea of unobtrusive JavaScript is that it should be used wherever possible to enhance functionality, not build it in entirely — basic functions should ideally work without JavaScript, although it is appreciated that this is not always an option. But again, a large part of it is using built-in browser functionality where possible.</p>
-  <p>Good example uses of unobtrusive JavaScript include:</p>
-  <ul>
-    <li>Providing client-side form validation, which alerts users to problems with their form entries quickly, without having to wait for the server to check the data. If it isn't available, the form will still work, but validation might be slower.
-</li>
-    <li>Providing custom controls for HTML5 &#60;video&#62;s that are accessible to keyboard-only users, along with a direct link to the video that can be used to access it if JavaScript is not available (the default &#60;video&#62; browser controls aren't keyboard accessible in most browsers).
-</li>
-  </ul>
-  <p><b>Other JavaScript accessibility concerns</b></p>
-  <p>There are other things to be aware of when implementing JavaScript and thinking about accessibility. We will add more as we find them.</p>
-  <p><em>mouse-specific events</em></p>
-  <p>As you will be aware, most user interactions are implemented in client-side JavaScript using event handlers, which allow us to run functions in response to certain events happening. Some events can have accessibility issues. The main example you'll come across is mouse-specific events like mouseover, mouseout, dblclick, etc. Functionality that runs in response to these events will not be accessible using other mechanisms, like keyboard controls.</p>
-  <p>To mitigate such problems, you should double up these events with similar events that can be activated by other means (so-called device-independent event handlers) — focus and blur would provide accessibility for keyboard users.</p>
-  <p>Let's look at an example that highlights when this could be useful. Maybe we want to provide a thumbnail image that shows a larger version of the image when it is moused over or focused (like you'd see on an e-commerce product catalog.)</p>
-  
-<pre>
-  <code>
-imgThumb.onmouseover = showImg;
-imgThumb.onmouseout = hideImg;
 
-imgThumb.onfocus = showImg;
-imgThumb.onblur = hideImg;
-  </code>
-</pre>
-<p>The first two lines run the functions when the mouse pointer hovers over and stops hovering over the thumbnail, respectively. This won't allow us to access the zoomed view by keyboard though — to allow that, we've included the last two lines, which run the functions when the image is focused and blurred (when focus stops). This can be done by tabbing over the image, because we've included tabindex="0" on it.</p>
-  <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
-</section>
-<section class="main-section" id="WAI-ARIA_basics">
-    <header>WAI-ARIA basics</header>
-  <p><b>What is WAI-ARIA?</b></p>
-  <p>WAI-ARIA is a specification written by the W3C, defining a set of additional HTML attributes that can be applied to elements to provide additional semantics and improve accessibility wherever it is lacking. There are three main features defined in the spec:</p>
-  <ul>
-    <li><b>Roles</b> — These define what an element is or does. Many of these are so-called landmark roles, which largely duplicate the semantic value of HTML5 structural elements e.g. role="navigation" (nav) or role="complementary" (aside), but there are also others that describe different pages structures, such as role="banner", role="search", role="tabgroup", role="tab", etc., which are commonly found in UIs.
-</li>
-    <li><b>Properties</b> — These define properties of elements, which can be used to give them extra meaning or semantics. As an example, aria-required="true" specifies that a form input needs to be filled in to be valid, whereas aria-labelledby="label" allows you to put an ID on an element, then reference it as being the label for anything else on the page, including multiple elements, which is not possible using &#60;label for="input"&#62;. As an example, you could use aria-labelledby to specify that a key description contained in a &#60;div&#62; is the label for multiple table cells, or you could use it as an alternative to image alt text — specify existing information on the page as an image's alt text, rather than having to repeat it inside the alt attribute. You can see an example of this at Text alternatives.
-</li>
-    <li><b>States</b> — Special properties that define the current conditions of elements, such as aria-disabled="true", which specifies to a screenreader that a form input is currently disabled. States differ from properties in that properties don't change throughout the lifecycle of an app, whereas states can change, generally programmatically via JavaScript.
-</li>
-  </ul>
-  <p>An important point about WAI-ARIA attributes is that they don't affect anything about the web page, except for the information exposed by the browser's accessibility APIs (where screenreaders get their information from). WAI-ARIA doesn't affect webpage structure, the DOM, etc., although the attributes can be useful for selecting elements by CSS.</p>
-  <p><b>When should you use WAI-ARIA?</b></p>
-  <p>There are four main areas that WAI-ARIA is useful in:</p>
-  <ul>
-    <li><b>Signposts/Landmarks:</b> ARIA's role attribute values can act as landmarks that either replicate the semantics of HTML5 elements (e.g. nav), or go beyond HTML5 semantics to provide signposts to different functional areas, e.g search, tabgroup, tab, listbox, etc.</li>
-    <li><b>Dynamic content updates:</b> Screenreaders tend to have difficulty with reporting constantly changing content; with ARIA we can use aria-live to inform screenreader users when an area of content is updated, e.g. via XMLHttpRequest, or DOM APIs.</li>
-    <li><b>Enhancing keyboard accessibility:</b> There are built-in HTML elements that have native keyboard accessibility; when other elements are used along with JavaScript to simulate similar interactions, keyboard accessibility and screenreader reporting suffers as a result. Where this is unavoidable, WAI-ARIA provides a means to allow other elements to receive focus (using tabindex).</li>
-    <li><b>Accessibility of non-semantic controls:</b> When a series of nested <div>s along with CSS/JavaScript is used to create a complex UI-feature, or a native control is greatly enhanced/changed via JavaScript, accessibility can suffer — screenreader users will find it difficult to work out what the feature does if there are no semantics or other clues. In these situations, ARIA can help to provide what's missing with a combination of roles like button, listbox, or tabgroup, and properties like aria-required or aria-posinset to provide further clues as to functionality.</li>
-  </ul>
-  <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
+      <p><b>Color and color contrast</b></p>
+      <p>When choosing a color scheme for your website, make sure that the text (foreground) color contrasts well with the background color. Your design might look cool, but it is no good if people with visual impairments like color blindness can't read your content.</p>
+      <p>Another tip is to not rely on color alone for signposts/information, as this will be no good for those who can't see the color.</p>
+
+      <h1>Javascript</h1>
+      <p>JavaScript can also break accessibility, depending on how it is used. Modern JavaScript is a powerful language, and we can do so much with it these days, from simple content and UI updates to fully-fledged 2D and 3D games. There is no rule that says all content has to be 100% accessible to all people — you just need to do what you can, and make your apps as accessible as possible.</p>
+
+      <p><b>The problem with too much JavaScript</b></p>
+      <p>The problem often comes when people rely on JavaScript too much. Sometimes you'll see a website where everything has been done with JavaScript — the HTML has been generated by JavaScript, the CSS has been generated by JavaScript, etc. This has all kinds of accessibility and other issues associated with it, so it is not advised.</p>
+
+      <p><b>Keeping it unobtrusive</b></p>
+      <p>You should keep unobtrusive JavaScript in mind when creating your content. The idea of unobtrusive JavaScript is that it should be used wherever possible to enhance functionality, not build it in entirely — basic functions should ideally work without JavaScript, although it is appreciated that this is not always an option. But again, a large part of it is using built-in browser functionality where possible.</p>
+      <p>Good example uses of unobtrusive JavaScript include:</p>
+        <ul>
+          <li>Providing client-side form validation, which alerts users to problems with their form entries quickly, without having to wait for the server to check the data. If it isn't available, the form will still work, but validation might be slower.</li>
+          <li>Providing custom controls for HTML5 &#60;video&#62;s that are accessible to keyboard-only users, along with a direct link to the video that can be used to access it if JavaScript is not available (the default &#60;video&#62; browser controls aren't keyboard accessible in most browsers).</li>
+        </ul>
+      <p><b>Other JavaScript accessibility concerns</b></p>
+      <p>There are other things to be aware of when implementing JavaScript and thinking about accessibility. We will add more as we find them.</p>
+      <p><em>mouse-specific events</em></p>
+      <p>As you will be aware, most user interactions are implemented in client-side JavaScript using event handlers, which allow us to run functions in response to certain events happening. Some events can have accessibility issues. The main example you'll come across is mouse-specific events like mouseover, mouseout, dblclick, etc. Functionality that runs in response to these events will not be accessible using other mechanisms, like keyboard controls.</p>
+      <p>To mitigate such problems, you should double up these events with similar events that can be activated by other means (so-called device-independent event handlers) — focus and blur would provide accessibility for keyboard users.</p>
+      <p>Let's look at an example that highlights when this could be useful. Maybe we want to provide a thumbnail image that shows a larger version of the image when it is moused over or focused (like you'd see on an e-commerce product catalog.)</p>
+
+        <pre>
+          <code>
+        imgThumb.onmouseover = showImg;
+        imgThumb.onmouseout = hideImg;
+
+        imgThumb.onfocus = showImg;
+        imgThumb.onblur = hideImg;
+          </code>
+        </pre>
+      <p>The first two lines run the functions when the mouse pointer hovers over and stops hovering over the thumbnail, respectively. This won't allow us to access the zoomed view by keyboard though — to allow that, we've included the last two lines, which run the functions when the image is focused and blurred (when focus stops). This can be done by tabbing over the image, because we've included tabindex="0" on it.</p>
+        <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
+  </section>
+  <section class="main-section" id="WAI-ARIA_basics">
+      <header>WAI-ARIA basics</header>
+      <p><b>What is WAI-ARIA?</b></p>
+      <p>WAI-ARIA is a specification written by the W3C, defining a set of additional HTML attributes that can be applied to elements to provide additional semantics and improve accessibility wherever it is lacking. There are three main features defined in the spec:</p>
+        <ul>
+          <li><b>Roles</b> — These define what an element is or does. Many of these are so-called landmark roles, which largely duplicate the semantic value of HTML5 structural elements e.g. role="navigation" (nav) or role="complementary" (aside), but there are also others that describe different pages structures, such as role="banner", role="search", role="tabgroup", role="tab", etc., which are commonly found in UIs.</li>
+          <li><b>Properties</b> — These define properties of elements, which can be used to give them extra meaning or semantics. As an example, aria-required="true" specifies that a form input needs to be filled in to be valid, whereas aria-labelledby="label" allows you to put an ID on an element, then reference it as being the label for anything else on the page, including multiple elements, which is not possible using &#60;label for="input"&#62;.</li>
+          <li><b>States</b> — Special properties that define the current conditions of elements, such as aria-disabled="true", which specifies to a screenreader that a form input is currently disabled. States differ from properties in that properties don't change throughout the lifecycle of an app, whereas states can change, generally programmatically via JavaScript.</li>
+        </ul>
+      <p>An important point about WAI-ARIA attributes is that they don't affect anything about the web page, except for the information exposed by the browser's accessibility APIs (where screenreaders get their information from). WAI-ARIA doesn't affect webpage structure, the DOM, etc., although the attributes can be useful for selecting elements by CSS.</p>
+      <p><b>When should you use WAI-ARIA?</b></p>
+      <p>There are four main areas that WAI-ARIA is useful in:</p>
+        <ul>
+          <li><b>Signposts/Landmarks:</b> ARIA's role attribute values can act as landmarks that either replicate the semantics of HTML5 elements (e.g. nav), or go beyond HTML5 semantics to provide signposts to different functional areas, e.g search, tabgroup, tab, listbox, etc.</li>
+          <li><b>Dynamic content updates:</b> Screenreaders tend to have difficulty with reporting constantly changing content; with ARIA we can use aria-live to inform screenreader users when an area of content is updated, e.g. via XMLHttpRequest, or DOM APIs.</li>
+          <li><b>Enhancing keyboard accessibility:</b> There are built-in HTML elements that have native keyboard accessibility; when other elements are used along with JavaScript to simulate similar interactions, keyboard accessibility and screenreader reporting suffers as a result. Where this is unavoidable, WAI-ARIA provides a means to allow other elements to receive focus (using tabindex).</li>
+          <li><b>Accessibility of non-semantic controls:</b> When a series of nested &#60;div&#62;s along with CSS/JavaScript is used to create a complex UI-feature, or a native control is greatly enhanced/changed via JavaScript, accessibility can suffer — screenreader users will find it difficult to work out what the feature does if there are no semantics or other clues. In these situations, ARIA can help to provide what's missing with a combination of roles like button, listbox, or tabgroup, and properties like aria-required or aria-posinset to provide further clues as to functionality.</li>
+        </ul>
+      <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
 </section>
 
 <section class="main-section" id="Accessible_multimedia">
     <header>Accessible multimedia</header>
-  <p>So far we have looked at a variety of content and what needs to be done to ensure its accessibility, ranging from simple text content to data tables, images, native controls such as form elements and buttons, and even more complex markup structures (with WAI-ARIA attributes).</p>
+      <p>So far we have looked at a variety of content and what needs to be done to ensure its accessibility, ranging from simple text content to data tables, images, native controls such as form elements and buttons, and even more complex markup structures (with WAI-ARIA attributes).</p>
+      <p>This article looks at another general class of content that arguably isn't as easy to ensure accessibility for — multimedia. Images, videos, &#60;canvas&#62; elements, Flash movies, etc., aren't as easily understood by screenreaders or navigated by the keyboard, and we need to give them a helping hand.</p>
 
-<p>This article looks at another general class of content that arguably isn't as easy to ensure accessibility for — multimedia. Images, videos, &#60;canvas&#62; elements, Flash movies, etc., aren't as easily understood by screenreaders or navigated by the keyboard, and we need to give them a helping hand.</p>
-  <p><b>Simple images</b></p>
-  <p>We already covered simple text alternatives for HTML images in our HTML: A good basis for accessibility article — you can refer back to there for the full details. In short, you should ensure that where possible visual content has an alternative text available for screenreaders to pick up and read to their users.</p>
-  <p><b>Accessible audio and video controls</b></p>
-  <p>HTML5 video and audio instances even come with a set of inbuilt controls that allow you to control the media straight out of the box. The controls attribute provides play/pause buttons, seek bar, etc. — the basic controls you'd expect from a media player. </p>
-  <p>However, there are problems with these controls: They are not keyboard accessible, in any browser except for Opera. And
-Different browsers give the native controls differing styling and functionality, and they aren't stylable, meaning that they can't be easily made to follow a site style guide.</p>
-<p>To remedy this, we can create our own custom controls. </p>
-  <p><b>Audio transcripts</b></p>
-  <p>To provide deaf people with access to audio content, you really need to create text transcripts. These can either be included on the same page as the audio in some way, or included on a separate page and linked to.
-  </p>
-<p>In terms of actually creating the transcript, your options are:</p>
-  <ol>
-    <li>Commercial services — You could pay a professional to do the transcription, see for example companies like Scribie, Casting Words, or Rev. Look around and ask advice to make sure you find a reputable company that you'll be able to work with effectively.
-</li>
-    <li>Community/grass roots/self transcription — If you are part of an active community or team in your workplace, then you could ask them for help with doing the translations. You could even have a go at doing them yourself.
-</li>
-    <li>Automated services — There are automated services available, for example when you upload a video to YouTube you can choose to generate automated captions/transcripts. Depending on how clear the spoken audio is, the resulting transcript quality will vary greatly.
-</li>
-    </ol>
-  <p>It is not OK to publish an audio resource but promise to publish the transcript later on — such promises often aren't kept, which will erode trust between you and your users. If the audio you are presenting is something like a face to face meeting or live spoken performance, it would be acceptable to take notes during the performance, publish them in full along with the audio, then seek help in cleaning up the notes afterwards.</p>
-  <p class="note">Note: An audio transcript will in general help multiple user groups. As well as giving deaf users access to the information contained in the audio, think about a user with a low bandwidth connection, who would find downloading the audio inconvenient. Think also about a user in a noisy environment like a pub or bar, who is trying to access the information but can't hear it over the noise.</p>
-  <p>Video text tracks</p>
-  <p>To make video accessible for deaf, blind, or even other groups of users (such as those on low bandwidth, or who don't understand the language the video is recorded in), you need to include text tracks along with your video content.</p>
-  <p>There are many different kinds, including subtitles, captions, descriptions and chapter titles.</p>
-  <p><b>Other multimedia content</b></p>
-  <p>The above sections don't cover all types of multimedia content that you might want to put on a web page. You might also need to deal with games, animations, slideshows, embedded video, and content created using other available technologies such as: HTML5 Canvas, Flash and Silverlight.</p>
-  <p>For such content, you need to deal with accessibility concerns on a case by case basis.</p>
-  <p>However, other multimedia is not so easy to make accessible. If for example you are dealing with an immersive 3D game or virtual reality app, it really is quite difficult to provide text alternatives for such an experience, and you might argue that blind users are not really in the target audience bracket for such apps.</p>
-  <p>You can however make sure that such an app has good enough color contrast and clear presentation so it is perceivable to those with low vision/color blindness, and also make it keyboard accessible. Remember that accessibility is about doing as much as you can, rather than striving for 100% accessibility all the time, which is often impossible.</p>
-  <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
+      <p><b>Simple images</b></p>
+      <p>We already covered simple text alternatives for HTML images in our HTML: A good basis for accessibility article — you can refer back to there for the full details. In short, you should ensure that where possible visual content has an alternative text available for screenreaders to pick up and read to their users.</p>
+
+      <p><b>Accessible audio and video controls</b></p>
+      <p>HTML5 video and audio instances even come with a set of inbuilt controls that allow you to control the media straight out of the box. The controls attribute provides play/pause buttons, seek bar, etc. — the basic controls you'd expect from a media player. </p>
+      <p>However, there are problems with these controls: They are not keyboard accessible, in any browser except for Opera. And different browsers give the native controls differing styling and functionality, and they aren't stylable, meaning that they can't be easily made to follow a site style guide.</p>
+      <p>To remedy this, we can create our own custom controls. </p>
+
+      <p><b>Audio transcripts</b></p>
+      <p>To provide deaf people with access to audio content, you really need to create text transcripts. These can either be included on the same page as the audio in some way, or included on a separate page and linked to.  </p>
+      <p>It is not OK to publish an audio resource but promise to publish the transcript later on — such promises often aren't kept, which will erode trust between you and your users. If the audio you are presenting is something like a face to face meeting or live spoken performance, it would be acceptable to take notes during the performance, publish them in full along with the audio, then seek help in cleaning up the notes afterwards.</p>
+
+      <p><b>Other multimedia content</b></p>
+      <p>The above sections don't cover all types of multimedia content that you might want to put on a web page. You might also need to deal with games, animations, slideshows, embedded video, and content created using other available technologies such as: HTML5 Canvas, Flash and Silverlight.</p>
+      <p>For such content, you need to deal with accessibility concerns on a case by case basis.</p>
+      <p>You can however make sure that such an app has good enough color contrast and clear presentation so it is perceivable to those with low vision/color blindness, and also make it keyboard accessible. Remember that accessibility is about doing as much as you can, rather than striving for 100% accessibility all the time, which is often impossible.</p>
+      <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
 </section>
 
 <section class="main-section" id="mobile_accessibility">
     <header>Mobile accessibility</header>
-  <p>The state of accessibility — and support for web standards in general — is good in modern mobile devices. Long gone are the days when mobile devices ran completely different web technologies to desktop browsers, forcing developers to use browser sniffing and serve them completely separate sites (although quite a few companies still detect usage of mobile devices and serve them a separate mobile domain).</p>
-  <p>These days, mobile devices in general can handle "full fat" websites, and the main platforms even have screenreaders built in to enable visually impaired users to use them successfully. Modern mobile browsers tend to have good support for WAI-ARIA, too.</p>
-  <p>To make a website accessible and usable on mobile, you just need to follow general good web design and accessibility best practices.</p>
-  <p>There are some exceptions that need special consideration for mobile; the main ones are:</p>
-  <ul>
-    <li>Control mechanisms — Make sure interface controls such as buttons are accessible on mobiles (i.e., mainly touchscreen), as well as desktops/laptops (mainly mouse/keyboard).</li>
-    <li>User input — Make user input requirements as painless as possible on mobile (e.g., in forms, keep typing to a minimum).
-</li>
-    <li>Responsive design — Make sure layouts work on mobile, conserve image download sizes, and think about provision of images for high-resolution screens.</li>
-  </ul>
-  <p><b>Responsive design</b></p>
-  <p>Responsive design is the practice of making your layouts and other features of your apps dynamically change depending on factors such as screen size and resolution, so they are usable and accessible to users of different device types.
-</p>
-  <p>In particular, the most common problems that need to be addressed for mobile are:</p>
-  <ul>
-    <li>Suitability of layouts for mobile devices. A multi-column layout won't work as well on a narrow screen, for example, and the text size may need to be increased so it is legible. Such issues can be solved by creating a responsive layout using technologies such as media queries, viewport, and flexbox.</li>
-    <li>Conserving image sizes downloaded. In general, small screen devices won't need images that are as large as their desktop counterparts, and they are more likely to be on slow network connections. Therefore, it is wise to serve smaller images to narrow screen devices as appropriate. You can handle this using responsive image techniques.</li>
-    <li>Thinking about high resolutions. Many mobile devices have high-resolution screens, and therefore need higher-resolution images so that the display can continue to look crisp and sharp. Again, you can serve images as appropriate using responsive image techniques. In addition, many image requirements can be fulfilled using the SVG vector images format, which is well-supported across browsers today. SVG has a small file size and will stay sharp regardless of whatever size is being displayed  (see Adding vector graphics to the web for more details).</li>
-  </ul>
-  <p><b>User input</b></p>
-  <p>On mobile devices, inputting data tends to be more annoying for users than the equivalent experience on desktop computers. It is more convenient to type text into form inputs using a desktop or laptop keyboard than a touchscreen virtual keyboard or a tiny mobile physical keyboard.</p>
-  <p>or this reason, it is worth trying to minimize the amount of typing needed. As an example, instead of getting users to fill out their job title each time using a regular text input, you could instead offer a &#60;select&#62; menu containing the most common options (which also helps with consistency in data entry), and offer an "Other" option that displays a text field to type any outliers into.</p>
-    <p>It is also worth considering the use of HTML5 form input types such as date on mobile platforms as they handle them well — both Android and iOS, for example, display usable widgets that fit well with the device experience.</p>
-  <p>If you want to provide a different solution for desktops, you could always serve different markup to your mobile devices using feature detection. See input types for raw information on detecting different input types, and also check out our feature detection article for much more information.</p>
-  <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
+      <p>The state of accessibility — and support for web standards in general — is good in modern mobile devices. Long gone are the days when mobile devices ran completely different web technologies to desktop browsers, forcing developers to use browser sniffing and serve them completely separate sites (although quite a few companies still detect usage of mobile devices and serve them a separate mobile domain).</p>
+      <p>To make a website accessible and usable on mobile, you just need to follow general good web design and accessibility best practices.</p>
+      <p>There are some exceptions that need special consideration for mobile; the main ones are:</p>
+        <ul>
+          <li>Control mechanisms — Make sure interface controls such as buttons are accessible on mobiles (i.e., mainly touchscreen), as well as desktops/laptops (mainly mouse/keyboard).</li>
+          <li>User input — Make user input requirements as painless as possible on mobile (e.g., in forms, keep typing to a minimum).</li>
+          <li>Responsive design — Make sure layouts work on mobile, conserve image download sizes, and think about provision of images for high-resolution screens.</li>
+        </ul>
+
+      <p><b>Responsive design</b></p>
+      <p>Responsive design is the practice of making your layouts and other features of your apps dynamically change depending on factors such as screen size and resolution, so they are usable and accessible to users of different device types.</p>
+      <p>In particular, the most common problems that need to be addressed for mobile are:</p>
+        <ul>
+          <li>Suitability of layouts for mobile devices. A multi-column layout won't work as well on a narrow screen, for example, and the text size may need to be increased so it is legible. Such issues can be solved by creating a responsive layout using technologies such as media queries, viewport, and flexbox.</li>
+          <li>Conserving image sizes downloaded. In general, small screen devices won't need images that are as large as their desktop counterparts, and they are more likely to be on slow network connections. Therefore, it is wise to serve smaller images to narrow screen devices as appropriate. You can handle this using responsive image techniques.</li>
+          <li>Thinking about high resolutions. Many mobile devices have high-resolution screens, and therefore need higher-resolution images so that the display can continue to look crisp and sharp. Again, you can serve images as appropriate using responsive image techniques. In addition, many image requirements can be fulfilled using the SVG vector images format, which is well-supported across browsers today. SVG has a small file size and will stay sharp regardless of whatever size is being displayed  (see Adding vector graphics to the web for more details).</li>
+        </ul>
+
+      <p><b>User input</b></p>
+      <p>On mobile devices, inputting data tends to be more annoying for users than the equivalent experience on desktop computers. It is more convenient to type text into form inputs using a desktop or laptop keyboard than a touchscreen virtual keyboard or a tiny mobile physical keyboard.</p>
+      <p>For this reason, it is worth trying to minimize the amount of typing needed. As an example, instead of getting users to fill out their job title each time using a regular text input, you could instead offer a &#60;select&#62; menu containing the most common options (which also helps with consistency in data entry), and offer an "Other" option that displays a text field to type any outliers into.</p>
+      <p class="return"><a href="#introduction"><i class="fa fa-arrow-up arrow" aria-hidden="true"></i>Back to top</a></p>
 </section>
 </main>
-<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js'></script>
 
-  
+
+
+<!--scripts here-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 
 </body>
 

@@ -3,26 +3,40 @@ header {
   font-size: 30px;
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+em {
+  text-decoration: underline;
+}
+
 main {
-  padding: 10px;
+  padding: 20px;
   margin-left: 29%;
 }
 
 pre code {
   background-color: #eee;
-  border: 1px solid #999;
+  /* border: 1px solid #999; */
   border-left: 5px solid black;
   display: block;
   padding: 10px;
 }
 
-p {
-  font-family: "Garamond", serif;
+h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.note {
-  background-color: lightgray;
-  padding: 10px;
+p {
+  font-family: "Arial", sans-serif;
+}
+
+.top-menu {
+  list-style: none;
 }
 
 .arrow {
@@ -32,7 +46,7 @@ p {
 
 .return {
   font-family: "arial", sans-serif;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .nav-side-menu {
@@ -51,8 +65,15 @@ p {
 }
 
 .nav li {
-   font-family: "Verdana", sans-serif;
+   font-family: "Arial", sans-serif;
 }
+
+.nav li:hover {
+   font-family: "Arial", sans-serif;
+   background-color: gray;
+   transition-duration: .5s;
+   transition-property: background-color;
+ }
 
 .menuhed {
   font-weight: bolder;
@@ -76,11 +97,11 @@ li a:hover {
     width: 100%;
     margin-bottom: 10px;
   }
-  
+
   main {
     margin: 0;
   }
-  
+
   .nav-side-menu .toggle-btn {
     display: block;
     cursor: pointer;
@@ -93,10 +114,12 @@ li a:hover {
     color: #000;
     width: 40px;
     text-align: center;
+
+
   }
 
 }
-  
+
 @media (min-width: 767px) {
     .nav-side-menu .menu-list .menu-content {
     display: block;
@@ -106,9 +129,10 @@ li a:hover {
   	float: right;
   }
 }
-/*   
-  #navbar {    
+
+
+/*
+  #navbar {
     background-color: red;
   } */
 }
-
