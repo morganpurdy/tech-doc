@@ -66,14 +66,17 @@ p {
 
 .nav li {
    font-family: "Arial", sans-serif;
+   border-bottom: solid gray 1px;
+   margin: 5px;
 }
 
-.nav li:hover {
+/* .nav li:hover {
    font-family: "Arial", sans-serif;
    background-color: gray;
    transition-duration: .5s;
    transition-property: background-color;
- }
+   opacity: 0.6;
+ } */
 
 .menuhed {
   font-weight: bolder;
